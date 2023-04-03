@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width = device-width, initial-scale =
+    1.0, maximum-scale = 1.0, minimum-scale = 1.0, user-scalable = 0,
+    minimal-ui" />
+    <style type="text/css">
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        canvas {
+            display: block;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <title>Game Client</title>
+
+
+
+</head>
+
+<body>
+    <h1>Game Client</h1>
+
+    <button id="buttonHostRoom">Host Room</button>
+    <p id="pRoomCode"></p>
+
+    <button id="buttonStartGame" hidden="true">Start Game</button>
+
+    <div id="divGameList" hidden="true">
+        <h4>Games</h4>
+        <button id="buttonPlayFictionary">Play Fictionary</button>
+    </div>
+
+    <div id="divFictionary" hidden="true">
+        <p>Iurkn</p>
+    </div>
+
+    <div id="divMessenger" hidden="true">
+        <input id="inputMessenger" />
+        <button id="buttonSendMessenger">Send</button>
+    </div>
+
+    <div id="divRelay">
+
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.min.js"></script>
+  <script src="StartScene.js"></script>
+  <script src="GameScene.js"></script>
+  <script src="EndScene.js"></script>
+  <script src="game.js"></script> -->
+</body>
+
+<script src ="actions/hostRoom.js"></script>
+<script src ="actions/startGame.js"></script>
+<script src ="actions/fictionary.js"></script>
+<script src ="actions/relay.js"></script>
+<script src="actions/api.js"></script>
+</html>
